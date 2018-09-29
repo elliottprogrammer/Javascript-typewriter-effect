@@ -5,6 +5,5 @@ Here I am writing a string, one character at a time, into a `<pre>` tag, creatin
 I also programmed in css syntax highlighting for enhanced effect.
 
 ### CodePen demo
-```
+
 [https://codepen.io/melliatto/pen/VEYQVm](https://codepen.io/melliatto/pen/VEYQVm)
-```
