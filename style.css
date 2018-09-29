@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    transition: all 200ms ease-out;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(99, 99, 99);
+    background-color: #fff;
+    position: relative;
+    height: 100vh;
+    display: flex;
+}
+#terminal {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 550px;
+    border: 1px solid #cfcfcf;
+    box-shadow: 0 0 3px 0 #ccc;
+    /* font-family: Consolas, 'Courier New', monospace; */
+}
+
+.terminal__header {
+    font-family: Arial;
+    font-size: 13px;
+    line-height: 18px;
+    background-color: #cfcfcf;
+    color: #333;
+    display: flex;
+    flex: 0 1 auto;
+    align-items:center;
+    padding: 6px 15px 6px 5px;
+}
+.terminal__header-left,
+.terminal__header-right {
+    flex: 0 0 auto;
+}
+
+.terminal__header-right {
+    display: flex;
+}
+.terminal__header-right > div {
+    margin-left: 20px;
+}
+
+.terminal__header-center {
+    flex: 1 1 auto;
+}
+
+.vscode-icon {
+    height: 18px;
+    width: auto;
+    vertical-align: middle;
+}
+#terminal-output {
+    flex: 1;
+    margin: 0;
+    background-color: #222;
+    color: #d6d6d6;
+    overflow: auto;
+    padding: 0 8px 8px;
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    white-space: pre-wrap;
+}
+
+.comment       { color: #a0ae7f; }
+.selector      { color: #a6da27; }
+.selector .key { color: #a6da27; }
+.selector .int { color: #a6da27; }
+.key           { color: #64d9ef; }
+.int           { color: #fd971c; }
+.hex           { color: #f92772; }
+.hex .int      { color: #f92772; }
+.value         { color: #d2cc70; }
+.var           { color: #66d9e0; }
+.operator      { color: #f92772; }
+.string        { color: #d2cc70; }
+.method        { color: #f9245c; }
+.run-command   { color: #ae81ff; }
